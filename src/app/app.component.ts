@@ -4,6 +4,8 @@ import {UserComponent} from "./user/user.component";
 import {DUMMY_USERS} from "./dummy-users";
 import {TasksComponent} from "./tasks/tasks.component";
 import {NgFor, NgIf} from "@angular/common";
+import {DUMMY_TASK} from "./tasks/dummy-task";
+import { Task } from './tasks/task/task.model';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,7 @@ import {NgFor, NgIf} from "@angular/common";
 })
 export class AppComponent {
   users = DUMMY_USERS;
+  tasks = DUMMY_TASK;
   selectedUserId?: string;
 
   get selectedUser() {
